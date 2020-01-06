@@ -15,6 +15,7 @@ class TicTacToe
   ]
 
   def play
+<<<<<<< HEAD
     while over? == false
     	turn
     end
@@ -27,6 +28,17 @@ class TicTacToe
     	puts "Congratulations O!"
     end
   end
+=======
+  while over? == false
+    turn
+  end
+  if won?
+    puts "Congratulations #{winner}!"
+  elsif draw?
+    puts "Cat's Game!"
+  end
+
+>>>>>>> fb08ce55ad7eded16e6458d52481ad6ba158d1be
   # #turn gets the player's move, checks that the move is valid, then updates the board with the new move and finally displays the board.
   # Called by #play
   def turn
@@ -122,5 +134,9 @@ class TicTacToe
       nil
     end
   end
+<<<<<<< HEAD
 end
 
+=======
+end
+>>>>>>> fb08ce55ad7eded16e6458d52481ad6ba158d1be
